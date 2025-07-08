@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(materia));
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.lblfecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonAgregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // horafecha
@@ -61,11 +64,35 @@
             this.lblhora.Text = "label1";
             this.lblhora.Click += new System.EventHandler(this.lblhora_Click);
             // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonEliminar.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminar.Image")));
+            this.buttonEliminar.Location = new System.Drawing.Point(1198, 71);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(64, 59);
+            this.buttonEliminar.TabIndex = 6;
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            // 
+            // buttonAgregar
+            // 
+            this.buttonAgregar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonAgregar.Image = ((System.Drawing.Image)(resources.GetObject("buttonAgregar.Image")));
+            this.buttonAgregar.Location = new System.Drawing.Point(1123, 71);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(69, 59);
+            this.buttonAgregar.TabIndex = 7;
+            this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
+            // 
             // materia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 734);
+            this.Controls.Add(this.buttonAgregar);
+            this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.lblfecha);
             this.Controls.Add(this.lblhora);
             this.Name = "materia";
@@ -81,5 +108,7 @@
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label lblhora;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonAgregar;
     }
 }

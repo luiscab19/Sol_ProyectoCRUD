@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoCRUD.Presentacion.Mantenimiento.Materia.Acciones;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +37,17 @@ namespace ProyectoCRUD.Presentacion.Mantenimiento.Materia
         private void materia_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            AgregarMat form = new AgregarMat();
+            form.Show();
         }
     }
 }

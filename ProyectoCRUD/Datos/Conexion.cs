@@ -18,7 +18,7 @@ namespace ProcesoCRUD.Datos
 
         public Conexion()
         {
-            this.Basededatos = "sistema_crud"; // Nombre de la base de datos
+            this.Basededatos = "SistemaCrud"; // Nombre de la base de datos
             this.Servidor = "localhost";      // Servidor
             this.Puerto = "5432";             // Puerto
             this.Usuario = "postgres";        // Usuario
