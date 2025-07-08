@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoCRUD.Presentacion.Mantenimiento.Materia.Acciones;
+using ProyectoCRUD.Presentacion.Mantenimiento.Seccion.Acciones;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +37,18 @@ namespace ProyectoCRUD.Presentacion.Mantenimiento.Seccion
         private void lblhora_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            AgregarSeccion form = new AgregarSeccion();
+            form.Show();
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            Eliminar_Seccion form = new Eliminar_Seccion();
+            form.Show();
         }
     }
 }
