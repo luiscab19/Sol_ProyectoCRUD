@@ -35,6 +35,11 @@
             this.lblhora = new System.Windows.Forms.Label();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonAgregar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridMateria = new System.Windows.Forms.DataGridView();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridMateria)).BeginInit();
             this.SuspendLayout();
             // 
             // horafecha
@@ -86,11 +91,51 @@
             this.buttonAgregar.UseVisualStyleBackColor = false;
             this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(82, 89);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(1002, 22);
+            this.textBox1.TabIndex = 8;
+            this.textBox1.Text = "Values";
+            // 
+            // dataGridMateria
+            // 
+            this.dataGridMateria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridMateria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Editar,
+            this.Eliminar});
+            this.dataGridMateria.Location = new System.Drawing.Point(150, 197);
+            this.dataGridMateria.Name = "dataGridMateria";
+            this.dataGridMateria.RowHeadersWidth = 51;
+            this.dataGridMateria.RowTemplate.Height = 24;
+            this.dataGridMateria.Size = new System.Drawing.Size(1047, 401);
+            this.dataGridMateria.TabIndex = 9;
+            this.dataGridMateria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridMateria_CellContentClick);
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
+            this.Editar.MinimumWidth = 6;
+            this.Editar.Name = "Editar";
+            this.Editar.Width = 125;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
+            this.Eliminar.MinimumWidth = 6;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Width = 125;
+            // 
             // materia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 734);
+            this.Controls.Add(this.dataGridMateria);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.lblfecha);
@@ -98,6 +143,7 @@
             this.Name = "materia";
             this.Text = "materia";
             this.Load += new System.EventHandler(this.materia_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridMateria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +156,9 @@
         private System.Windows.Forms.Label lblhora;
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.Button buttonAgregar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridMateria;
+        private System.Windows.Forms.DataGridViewImageColumn Editar;
+        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
     }
 }

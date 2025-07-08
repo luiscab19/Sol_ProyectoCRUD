@@ -113,6 +113,18 @@
     <Compile Include="Presentacion\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Curso\Acciones\AñadirCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Curso\Acciones\AñadirCurso.Designer.cs">
+      <DependentUpon>AñadirCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Curso\Acciones\EliminarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Curso\Acciones\EliminarCurso.Designer.cs">
+      <DependentUpon>EliminarCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Mantenimiento\Curso\curso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     </Compile>
     <Compile Include="Presentacion\Mantenimiento\Materia\Acciones\AgregarMat.Designer.cs">
       <DependentUpon>AgregarMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Materia\Acciones\EliminarMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Materia\Acciones\EliminarMateria.Designer.cs">
+      <DependentUpon>EliminarMateria.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Mantenimiento\Materia\materia.cs">
       <SubType>Form</SubType>
@@ -178,6 +196,9 @@
     <EmbeddedResource Include="Presentacion\Mantenimiento\Materia\Acciones\AgregarMat.resx">
       <DependentUpon>AgregarMat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Mantenimiento\Materia\Acciones\EliminarMateria.resx">
+      <DependentUpon>EliminarMateria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Mantenimiento\Materia\materia.resx">
       <DependentUpon>materia.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,7 +239,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Presentacion\Incripcion\Acciones\" />
-    <Folder Include="Presentacion\Mantenimiento\Curso\Acciones\" />
+    <Folder Include="Presentacion\Mantenimiento\Persona\acciones\" />
     <Folder Include="Presentacion\Notas\Acciones\" />
     <Folder Include="Presentacion\Reportes\Acciones\" />
   </ItemGroup>
