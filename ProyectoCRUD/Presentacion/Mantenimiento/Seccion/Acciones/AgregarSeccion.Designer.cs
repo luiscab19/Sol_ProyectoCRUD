@@ -55,9 +55,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(112, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 42);
+            this.label1.Size = new System.Drawing.Size(295, 42);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Agregar Seccion";
+            this.label1.Text = "Añadir  Seccion";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelSeccion
@@ -84,10 +84,10 @@
             // 
             // textBoxContenido
             // 
-            this.textBoxContenido.Location = new System.Drawing.Point(52, 337);
+            this.textBoxContenido.Location = new System.Drawing.Point(52, 344);
             this.textBoxContenido.Multiline = true;
             this.textBoxContenido.Name = "textBoxContenido";
-            this.textBoxContenido.Size = new System.Drawing.Size(419, 147);
+            this.textBoxContenido.Size = new System.Drawing.Size(419, 65);
             this.textBoxContenido.TabIndex = 7;
             this.textBoxContenido.TextChanged += new System.EventHandler(this.textBoxContenido_TextChanged_1);
             // 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoCRUD.Presentacion.Mantenimiento.Materia.Acciones;
+using ProyectoCRUD.Presentacion.Mantenimiento.Persona.acciones;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +23,18 @@ namespace ProyectoCRUD.Presentacion.Mantenimiento.Persona
         {
             lblhora.Text=DateTime.Now.ToLongTimeString();
             lblfecha.Text=DateTime.Now.ToShortDateString();
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            AgregarPersona form = new AgregarPersona();
+            form.Show();
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarPersona form = new EliminarPersona();
+            form.Show();
         }
     }
 }

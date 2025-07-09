@@ -29,9 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(curso));
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.lblfecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonAgregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // horafecha
@@ -59,15 +63,49 @@
             this.lblhora.TabIndex = 4;
             this.lblhora.Text = "label1";
             // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonEliminar.Image = global::ProyectoCRUD.Properties.Resources.delete__1_;
+            this.buttonEliminar.Location = new System.Drawing.Point(1256, 71);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(69, 59);
+            this.buttonEliminar.TabIndex = 12;
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(122, 89);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(1002, 22);
+            this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "Values";
+            // 
+            // buttonAgregar
+            // 
+            this.buttonAgregar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonAgregar.Image = ((System.Drawing.Image)(resources.GetObject("buttonAgregar.Image")));
+            this.buttonAgregar.Location = new System.Drawing.Point(1163, 71);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(69, 59);
+            this.buttonAgregar.TabIndex = 10;
+            this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
+            // 
             // curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 734);
+            this.Controls.Add(this.buttonEliminar);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.lblfecha);
             this.Controls.Add(this.lblhora);
             this.Name = "curso";
             this.Text = "curso";
+            this.Load += new System.EventHandler(this.curso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,5 +116,8 @@
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label lblhora;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonAgregar;
     }
 }

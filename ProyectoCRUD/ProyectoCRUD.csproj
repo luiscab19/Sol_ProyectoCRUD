@@ -161,6 +161,18 @@
     <Compile Include="Presentacion\Mantenimiento\Materia\materia.Designer.cs">
       <DependentUpon>materia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Persona\acciones\AgregarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Persona\acciones\AgregarPersona.Designer.cs">
+      <DependentUpon>AgregarPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Persona\acciones\EliminarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Mantenimiento\Persona\acciones\EliminarPersona.Designer.cs">
+      <DependentUpon>EliminarPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Mantenimiento\Persona\persona.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +223,12 @@
     <EmbeddedResource Include="Presentacion\main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Mantenimiento\Curso\Acciones\AñadirCurso.resx">
+      <DependentUpon>AñadirCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Mantenimiento\Curso\Acciones\EliminarCurso.resx">
+      <DependentUpon>EliminarCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Mantenimiento\Curso\curso.resx">
       <DependentUpon>curso.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +243,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Mantenimiento\Materia\materia.resx">
       <DependentUpon>materia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Mantenimiento\Persona\acciones\AgregarPersona.resx">
+      <DependentUpon>AgregarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Mantenimiento\Persona\acciones\EliminarPersona.resx">
+      <DependentUpon>EliminarPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Mantenimiento\Persona\persona.resx">
       <DependentUpon>persona.cs</DependentUpon>
@@ -273,7 +297,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Presentacion\Incripcion\Acciones\" />
-    <Folder Include="Presentacion\Mantenimiento\Persona\acciones\" />
     <Folder Include="Presentacion\Notas\Acciones\" />
     <Folder Include="Presentacion\Reportes\Acciones\" />
   </ItemGroup>

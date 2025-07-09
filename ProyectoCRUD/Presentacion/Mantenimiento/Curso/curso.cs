@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoCRUD.Presentacion.Mantenimiento.Curso.Acciones;
+using ProyectoCRUD.Presentacion.Mantenimiento.Persona.acciones;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +23,23 @@ namespace ProyectoCRUD.Presentacion.Mantenimiento.Curso
         {
             lblhora.Text=DateTime.Now.ToLongTimeString();
             lblfecha.Text=DateTime.Now.ToShortDateString();
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            AñadirCurso form = new AñadirCurso();
+            form.Show();
+        }
+
+        private void curso_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarCurso form = new EliminarCurso();
+            form.Show();
         }
     }
 }

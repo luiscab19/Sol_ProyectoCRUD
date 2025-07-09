@@ -10,14 +10,12 @@ namespace ProcesoCRUD.Entidades
     {
         public int Persona_id { get; set; }
         public string Persona_no { get; set; }
-        public string Persona_de { get; set; }
         public int Tipo_persona_id { get; set; }
         public string Tipo_persona_de { get; set; }
 
         public E_Persona()
         {
             Persona_no = " ";
-            Persona_de = " ";
             Tipo_persona_de =  "";
         }
 
